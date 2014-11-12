@@ -72,6 +72,9 @@
 }
 
 \lstset{style=mystyle}
+
+\newcommand{\thankyou}
+{\begin{center} Would love to hear your experience! \\ gabow@cbio.mskcc.org \\ vipin@cbio.mskcc.org \end{center}}
 %
 \title[pyClass1]{Introduction to Programming with Python - Day 3}
 \author{vipin@cbio.mskcc.org}
@@ -90,173 +93,163 @@
 \begin{frame}[plain]
     \frametitle{List Comprehensions}
     \begin{itemize}
-    \item[] List comprehensions provide a concise way to create lists. 
-    %\pause
-    \lstinputlisting[language=Python]{scripts/list_comprehension_1.py}
-    %\pause
-    \lstinputlisting[language=Python]{scripts/list_comprehension_2.py}
-    %\pause
-    \lstinputlisting[language=Python]{scripts/list_comprehension_3.py}
-    %\pause
-    \lstinputlisting[language=Python]{scripts/list_comprehension_4.py}
+        \item[] List comprehensions provide a concise way to create lists. 
+        %\pause
+        \lstinputlisting[language=Python]{scripts/list_comprehension_1.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/list_comprehension_2.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/list_comprehension_3.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/list_comprehension_4.py}
     \end{itemize}
 \end{frame}
 %
-%\begin{frame}[plain]
-%    \frametitle{del Statement}
-%    \begin{itemize}
-%       \item[] The way to remove an item from a list given its index instead of its value: the del statement.
-%        
-%    \pause
-%    \lstinputlisting[language=Python]{scripts/list_del.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{del Statement}
+    \begin{itemize}
+        \item[] The \textbf{del} statement is to remove an item from a list given its index instead of its value.
+        \newline
+        %\pause
+        \lstinputlisting[language=Python]{scripts/list_del.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Tuple - Another Data Type}
-%    \begin{itemize}
-%        \item[] Tuples are immutable, and usually contain an heterogeneous sequence of elements. 
-%        
-%    \pause
-%    \lstinputlisting[language=Python]{scripts/tuple.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Tuple - Another Data Type}
+    \begin{itemize}
+        \item[] Tuples are immutable, and usually contain an heterogeneous sequence of elements. 
+        \newline
+        %\pause
+        \lstinputlisting[language=Python]{scripts/tuple.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Defining Functions}
-%    \begin{itemize}
-%        \item[]Little self-contained programs that perform a specific task. 
-%        
-%    \pause
-%        \item[] Which you can incorporate into your own, larger programs.
-%        \newline
-%    \pause
-%        
-%        \item[] 'Calling' a function involves: \\ 
-%        giving a function input, and it will return a value as output.
-%        
-%    \pause
-%        \newline
-%        \item[] print 'Hello Python Class'
-%        
-%    \pause
-%        \newline
-%        \item[] The keyword def introduces a function definition.
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Defining Functions}
+    \begin{itemize}
+        \item[]Little self-contained programs that perform a specific task. 
+        %\pause
+        \item[] Which you can incorporate into your own, larger programs.
+        \newline
+        %\pause
+        \item[] 'Calling' a function involves: \\ 
+        giving a function input, and it will return a value as output.
+        \newline
+        %\pause
+        \item[] print 'Hello Python Class'
+        \newline
+        %\pause
+        \item[] The keyword def introduces a function definition.
+    \end{itemize}
+\end{frame}
 %% 
-%\begin{frame}[plain]
-%    \frametitle{Defining Functions ...}
-%    \begin{itemize}
-%        \item[] function definition 
-%        \lstinputlisting[language=Python]{scripts/factorial.py}
-%        
-%    \pause
-%    
-%        %\newline 
-%        \item[] function call  
-%        \lstinputlisting[language=Python]{scripts/call_factorial.py}
-%        \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Defining Functions}
+    \begin{itemize}
+        \item[] function definition 
+        \lstinputlisting[language=Python]{scripts/factorial.py}
+        \pause
+        %\newline 
+        \item[] function call  
+        \lstinputlisting[language=Python]{scripts/call_factorial.py}
+    \end{itemize}
+\end{frame}
 %% 
-%\begin{frame}[plain]
-%    \frametitle{Modules}
-%    \begin{itemize}
-%        \item[] A module is a file containing Python definitions and statements. 
-%        
-%    \pause
-%        \item[] factorial.py:
-%        \lstinputlisting[language=Python]{scripts/factorial.py}
-%    \pause
-%        
-%        \item[] Import this module: 
-%        \lstinputlisting[language=Python]{scripts/import_module.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Modules}
+    \begin{itemize}
+        \item[] A module is a file containing Python definitions and statements. 
+        \pause
+        \item[] factorial.py:
+        \lstinputlisting[language=Python]{scripts/factorial.py}
+        \pause
+        \item[] Import this module: 
+        \lstinputlisting[language=Python]{scripts/import_module.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Regular Expression Operations}
-%    \begin{itemize}
-%        \item[] The module \textbf{\textit{re}} provides full support for regular expressions. 
-%        
-%    \pause
-%        \item[] Meta characters:
-%        \lstinputlisting[language=Python]{scripts/meta_char.py}
-%    \pause
-%        
-%        \item[] Predefined characters:
-%        \lstinputlisting[language=Python]{scripts/meta_char_1.py}
-%        
-%    \pause
-%        \item[] For further references url: \url{https://docs.python.org/2/library/re.html} 
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Regular Expression Operations}
+    \begin{itemize}
+        \item[] The module \textbf{\textit{re}} provides full support for regular expressions. 
+        \pause
+        \item[] Meta characters:
+        \lstinputlisting[language=Python]{scripts/meta_char_1.py}
+        \pause
+        \item[] Predefined characters:
+        \lstinputlisting[language=Python]{scripts/meta_char_2.py}
+        \pause
+        \item[] For further references url: \url{https://docs.python.org/2/library/re.html} 
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Match Function}
-%    \begin{itemize}
-%        \item[] Syntax pattern for match function:
-%        \lstinputlisting[language=Python]{scripts/re_match_1.py} 
-%    \pause
-%        
-%        \lstinputlisting[language=Python]{scripts/re_match.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Match Function}
+    \begin{itemize}
+        \item[] Syntax pattern for match function:
+        \newline
+        \lstinputlisting[language=Python]{scripts/re_match_1.py} 
+        %\newline
+        \pause
+        \lstinputlisting[language=Python]{scripts/re_match_2.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Matching vs Searching}
-%    \begin{itemize}
-%        \item[] match checks for a match only at the beginning of the string
-%        
-%    \pause
-%        \item[] search checks for a match anywhere in the string
-%         
-%    \pause
-%        \lstinputlisting[language=Python]{scripts/match_search.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Matching vs Searching}
+    \begin{itemize}
+        \item[] match checks for a match only at the beginning of the string
+        \pause
+        \item[] search checks for a match anywhere in the string
+        \pause
+        \newline
+        \lstinputlisting[language=Python]{scripts/match_search.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Search and Replace}
-%    \begin{itemize}
-%        \item[] Some of the \textbf{re} methods that use regular expressions is \textbf{sub}.
-%        
-%    \pause
-%        \lstinputlisting[language=Python]{scripts/search_replace.py}
-%        
-%    \pause
-%        \lstinputlisting[language=Python]{scripts/search_replace_1.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Search and Replace}
+    \begin{itemize}
+        \item[] Some of the \textbf{re} methods that use regular expressions is \textbf{sub}.
+        \newline
+        \pause
+        \lstinputlisting[language=Python]{scripts/search_replace_1.py}
+        \pause
+        \lstinputlisting[language=Python]{scripts/search_replace_2.py}
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{Errors and Exceptions}
-%    \begin{itemize}
-%        \item[] Syntax errors.
-%        \lstinputlisting[language=Python]{scripts/syn_error.py}
-%        
-%    \pause
-%        \item[] An exception is an event, which occurs during the execution of a program.
-%        \lstinputlisting[language=Python]{scripts/excp_handle.py}
-%    \pause
-%        
-%        \item[] For further references url: \url{https://docs.python.org/2/tutorial/errors.html} 
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{Errors and Exceptions}
+    \begin{itemize}
+        \item[] Syntax errors.
+        \lstinputlisting[language=Python]{scripts/syn_error.py}
+        %\newline
+        \pause
+        \item[] An exception is an event, which occurs during the execution of a program.
+        \lstinputlisting[language=Python]{scripts/excp_handle.py}
+        %\newline
+        \pause
+        \item[] For further references url: \url{https://docs.python.org/2/tutorial/errors.html} 
+    \end{itemize}
+\end{frame}
 %%
-%\begin{frame}[plain]
-%    \frametitle{The assert Statement}
-%    \begin{itemize}
-%        \item[] Python interpreter evaluates the expression,
-%        \item[] If the expression is false, raises an AssertionError exception.
-%        \newline
-%        \lstinputlisting[language=Python]{scripts/assert_1.py}
-%        
-%    \pause
-%        \item[] Test case to check for valid user input phone numbers: 
-%        \newline
-%        \lstinputlisting[language=Python]{scripts/assert.py}
-%    \end{itemize}
-%\end{frame}
+\begin{frame}[plain]
+    \frametitle{The assert Statement}
+    \begin{itemize}
+        \item[] Python interpreter evaluates the expression,
+        \item[] If the expression is false, raises an AssertionError exception.
+        \newline
+        \lstinputlisting[language=Python]{scripts/assert_1.py}
+        \pause
+        \item[] Test case to check for valid user input phone numbers: 
+        \newline
+        \lstinputlisting[language=Python]{scripts/assert_2.py}
+    \end{itemize}
+\end{frame}
 %
+\begin{frame}[plain]
+    \thankyou
+\end{frame}
 \end{document}
