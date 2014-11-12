@@ -1,0 +1,262 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+%
+\mode<presentation> {
+\usetheme{CambridgeUS}
+}
+%
+\setbeamercolor{frametitle}{fg=cyan!80!black}
+\setbeamercolor{title}{fg=cyan!80!black}
+\setbeamercolor{palette tertiary}{fg=black, bg=cyan}
+\setbeamercolor{palette primary}{fg=black, bg=gray!30!white}
+\setbeamercolor{palette secondary}{fg=black, bg=gray!20!white}
+%
+\setbeamertemplate{headline}
+{
+  \leavevmode%
+  \hbox{%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+%  %  \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+%  %  \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+%  %\end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+%  %  \usebeamerfont{author in head/foot}{Vipin @ R\"{a}tschLab}
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+%  %  \usebeamerfont{title in head/foot}\insertshorttitle
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+%  %\end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+%
+\usepackage{graphicx} 
+\usepackage{booktabs}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codecomment}{rgb}{152,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codekeys}{rgb}{30,0,100}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codecomment},
+    keywordstyle=\color{codekeys},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+
+\lstset{style=mystyle}
+%
+\title[pyClass1]{Introduction to Programming with Python - Day 3}
+\author{vipin@cbio.mskcc.org}
+%
+\institute[cBio@MSKCC]
+{
+    R{\"a}tsch Laboratory, Computational Biology Center\\
+    Memorial Sloan Kettering Cancer Center\\
+}
+\date{11 November 2014}
+%
+\begin{document}
+\maketitle
+%
+%% Continue from Data structures 
+\begin{frame}[plain]
+    \frametitle{List Comprehensions}
+    \begin{itemize}
+    \item[] List comprehensions provide a concise way to create lists. 
+    %\pause
+    \lstinputlisting[language=Python]{scripts/list_comprehension_1.py}
+    %\pause
+    \lstinputlisting[language=Python]{scripts/list_comprehension_2.py}
+    %\pause
+    \lstinputlisting[language=Python]{scripts/list_comprehension_3.py}
+    %\pause
+    \lstinputlisting[language=Python]{scripts/list_comprehension_4.py}
+    \end{itemize}
+\end{frame}
+%
+%\begin{frame}[plain]
+%    \frametitle{del Statement}
+%    \begin{itemize}
+%       \item[] The way to remove an item from a list given its index instead of its value: the del statement.
+%        
+%    \pause
+%    \lstinputlisting[language=Python]{scripts/list_del.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Tuple - Another Data Type}
+%    \begin{itemize}
+%        \item[] Tuples are immutable, and usually contain an heterogeneous sequence of elements. 
+%        
+%    \pause
+%    \lstinputlisting[language=Python]{scripts/tuple.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Defining Functions}
+%    \begin{itemize}
+%        \item[]Little self-contained programs that perform a specific task. 
+%        
+%    \pause
+%        \item[] Which you can incorporate into your own, larger programs.
+%        \newline
+%    \pause
+%        
+%        \item[] 'Calling' a function involves: \\ 
+%        giving a function input, and it will return a value as output.
+%        
+%    \pause
+%        \newline
+%        \item[] print 'Hello Python Class'
+%        
+%    \pause
+%        \newline
+%        \item[] The keyword def introduces a function definition.
+%    \end{itemize}
+%\end{frame}
+%% 
+%\begin{frame}[plain]
+%    \frametitle{Defining Functions ...}
+%    \begin{itemize}
+%        \item[] function definition 
+%        \lstinputlisting[language=Python]{scripts/factorial.py}
+%        
+%    \pause
+%    
+%        %\newline 
+%        \item[] function call  
+%        \lstinputlisting[language=Python]{scripts/call_factorial.py}
+%        \end{itemize}
+%\end{frame}
+%% 
+%\begin{frame}[plain]
+%    \frametitle{Modules}
+%    \begin{itemize}
+%        \item[] A module is a file containing Python definitions and statements. 
+%        
+%    \pause
+%        \item[] factorial.py:
+%        \lstinputlisting[language=Python]{scripts/factorial.py}
+%    \pause
+%        
+%        \item[] Import this module: 
+%        \lstinputlisting[language=Python]{scripts/import_module.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Regular Expression Operations}
+%    \begin{itemize}
+%        \item[] The module \textbf{\textit{re}} provides full support for regular expressions. 
+%        
+%    \pause
+%        \item[] Meta characters:
+%        \lstinputlisting[language=Python]{scripts/meta_char.py}
+%    \pause
+%        
+%        \item[] Predefined characters:
+%        \lstinputlisting[language=Python]{scripts/meta_char_1.py}
+%        
+%    \pause
+%        \item[] For further references url: \url{https://docs.python.org/2/library/re.html} 
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Match Function}
+%    \begin{itemize}
+%        \item[] Syntax pattern for match function:
+%        \lstinputlisting[language=Python]{scripts/re_match_1.py} 
+%    \pause
+%        
+%        \lstinputlisting[language=Python]{scripts/re_match.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Matching vs Searching}
+%    \begin{itemize}
+%        \item[] match checks for a match only at the beginning of the string
+%        
+%    \pause
+%        \item[] search checks for a match anywhere in the string
+%         
+%    \pause
+%        \lstinputlisting[language=Python]{scripts/match_search.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Search and Replace}
+%    \begin{itemize}
+%        \item[] Some of the \textbf{re} methods that use regular expressions is \textbf{sub}.
+%        
+%    \pause
+%        \lstinputlisting[language=Python]{scripts/search_replace.py}
+%        
+%    \pause
+%        \lstinputlisting[language=Python]{scripts/search_replace_1.py}
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{Errors and Exceptions}
+%    \begin{itemize}
+%        \item[] Syntax errors.
+%        \lstinputlisting[language=Python]{scripts/syn_error.py}
+%        
+%    \pause
+%        \item[] An exception is an event, which occurs during the execution of a program.
+%        \lstinputlisting[language=Python]{scripts/excp_handle.py}
+%    \pause
+%        
+%        \item[] For further references url: \url{https://docs.python.org/2/tutorial/errors.html} 
+%    \end{itemize}
+%\end{frame}
+%%
+%\begin{frame}[plain]
+%    \frametitle{The assert Statement}
+%    \begin{itemize}
+%        \item[] Python interpreter evaluates the expression,
+%        \item[] If the expression is false, raises an AssertionError exception.
+%        \newline
+%        \lstinputlisting[language=Python]{scripts/assert_1.py}
+%        
+%    \pause
+%        \item[] Test case to check for valid user input phone numbers: 
+%        \newline
+%        \lstinputlisting[language=Python]{scripts/assert.py}
+%    \end{itemize}
+%\end{frame}
+%
+\end{document}
