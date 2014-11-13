@@ -237,21 +237,8 @@
         %\pause
         \lstinputlisting[language=Python]{scripts/plt_2d.py}
         %\pause
-        \item[] Reference: \url{http://matplotlib.org/}
-    \end{itemize}
-\end{frame}
-%
-\begin{frame}[plain]
-    \frametitle{pip or easy\_install - managing local python packages}
-    \begin{itemize}
-        \item[] Machine learning toolbox in python
-        %\begin{itemize}
-         %   \item []SHOGUN \url{shogun-toolbox.org}
-         %   \item []scikit-learn \url{scikit-learn.org} 
-        %\end{itemize}
-        %\newline 
- %       \pause
-        %\lstinputlisting[language=Bash]{scripts/pip_install.sh}
+        \item[] Reference: \url{http://matplotlib.org/}\\
+        \url{http://web.stanford.edu/~mwaskom/software/seaborn/}
     \end{itemize}
 \end{frame}
 %
@@ -261,8 +248,50 @@
         \item[] 
     \end{itemize}
 \end{frame}
-% \item[] For further references url: \url{https://docs.python.org/2/library/re.html} 
-% \lstinputlisting[language=Python]{scripts/match_search.py}
+%
+\begin{frame}[plain]
+    \frametitle{pip or easy\_install - managing local python packages}
+    \begin{itemize}
+        \item[] Machine learning toolbox in python
+        \begin{itemize}
+            \item []SHOGUN - \url{shogun-toolbox.org}
+            \item []scikit-learn - \url{scikit-learn.org} 
+        %\pause
+        \end{itemize}
+        \lstinputlisting[language=Bash]{scripts/pip_install.sh}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{\textbf{cPickle} - data persistence}
+    \begin{itemize}
+        \item[] Methods \textbf{dump()}, \textbf{load()} 
+        \newline
+        %\pause
+        \lstinputlisting[language=Python]{scripts/cpickle_dump.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/cpickle_load.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{Django - python web framework}
+    \begin{itemize}
+        \item[] Creating a project: django-admin.py startproject mysite 
+        \newline
+        \pause 
+        \item[] Add names to \textit{mysite settings.py} \textit{mysite urls.py} 
+        %\newline
+        \pause 
+        \item[] python manage.py startapp app\_name
+        \pause 
+        \item[] Edit view.py 
+        \lstinputlisting[language=Python]{scripts/views.py}
+        \pause 
+        \item[] python manage.py runserver
+        \item[] Details: \url{https://www.djangoproject.com/}
+    \end{itemize}
+\end{frame}
 %
 \begin{frame}[plain]
     \thankyou

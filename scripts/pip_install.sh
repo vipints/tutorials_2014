@@ -1,5 +1,4 @@
-# Please execute the following command in a unix console/terminal 
-
+# execute the following command in a unix console
 # creating a path for module installation 
 mkdir -p /Users/student/tmp/Python/2.7/site-packages/
 
@@ -8,7 +7,6 @@ export PYTHONPATH=$PYTHONPATH:/Users/student/tmp/Python/2.7/site-packages/
 
 # install the machine learning package
 pip install freeze scikit-learn  
-#pip install --install-option="--prefix=$PREFIX_PATH" package_name 
 
 # testing the installation
 python -c "import sklearn"
