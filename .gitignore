@@ -1,0 +1,8 @@
+syntax: regexp
+
+*.aux 
+*.log 
+*.nav 
+*.out 
+*.snm 
+*.toc
