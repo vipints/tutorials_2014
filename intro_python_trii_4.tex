@@ -1,0 +1,270 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+%
+\mode<presentation> {
+\usetheme{CambridgeUS}
+}
+%
+\setbeamercolor{frametitle}{fg=cyan!80!black}
+\setbeamercolor{title}{fg=cyan!80!black}
+\setbeamercolor{palette tertiary}{fg=black, bg=cyan}
+\setbeamercolor{palette primary}{fg=black, bg=gray!30!white}
+\setbeamercolor{palette secondary}{fg=black, bg=gray!20!white}
+%
+\setbeamertemplate{headline}
+{
+  \leavevmode%
+  \hbox{%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+%  %  \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+%  %  \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+%  %\end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+%  %  \usebeamerfont{author in head/foot}{Vipin @ R\"{a}tschLab}
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+%  %  \usebeamerfont{title in head/foot}\insertshorttitle
+%  %\end{beamercolorbox}%
+%  %\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+%  %\end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+%
+\usepackage{graphicx} 
+\usepackage{booktabs}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codecomment}{rgb}{152,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codekeys}{rgb}{30,0,100}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codecomment},
+    keywordstyle=\color{codekeys},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+
+\lstset{style=mystyle}
+
+\newcommand{\thankyou}
+{\begin{center} Would love to hear your experience! \\  gabow@cbio.mskcc.org \\ vipin@cbio.mskcc.org \end{center}}
+%
+\title[pyClass1]{Introduction to Programming with Python - Day 4}
+\author{vipin@cbio.mskcc.org}
+%
+\institute[cBio@MSKCC]
+{
+    R{\"a}tsch Laboratory, Computational Biology Center\\
+    Memorial Sloan Kettering Cancer Center\\
+}
+\date{13 November 2014}
+%
+\begin{document}
+\maketitle
+%
+\begin{frame}[plain]
+    \frametitle{Python for Scientific Computing}
+    \begin{itemize}
+        \item[] SciPy is a Python-based ecosystem of open-source software for science. 
+        \newline 
+        %\pause 
+        \item[] NumPy - Powerful N-dimensional array object 
+        \newline
+        %\pause
+        \item[] Matplotlib - 2D plotting library
+        \newline
+        %\pause
+        \item[] IPython - Interactive python console
+        \newline
+        %\pause
+        \item[] pandas - Data structures
+    \end{itemize}
+\end{frame}
+%
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - multidimensional data arrays}
+    \begin{itemize}
+        \item[] The \textbf{numpy} package (module) is used in almost all numerical computation using Python.
+        \newline
+        %\pause
+        \item[] Provide high-performance vector, matrix and higher-dimensional data structures for Python.
+        \newline
+        %\pause 
+        \item[] In the \textbf{numpy} package the terminology used for vectors, matrices and higher-dimensional data sets is \textit{array}.
+        \newline
+        %\pause 
+         \lstinputlisting[language=Python]{scripts/import_np_1.py}
+         %\pause
+         \item[] The recommended convention to import numpy is:
+        \newline
+         %\pause
+         \lstinputlisting[language=Python]{scripts/import_np_2.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - manual construction of arrays}
+    \begin{itemize}
+        \item[] 1-Dimension: 
+         \lstinputlisting[language=Python]{scripts/np_1d.py}
+        %\pause 
+        \item[] 2-Dimension: 
+         \lstinputlisting[language=Python]{scripts/np_2d.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - basic data types}
+    \begin{itemize}
+        \item[] Different data types allows to store data efficiently.
+        \newline
+        %\pause
+         \lstinputlisting[language=Python]{scripts/np_dtype_1.py}
+         %\pause
+         \item[] ValueError - assign a value of the wrong type to an element
+         \lstinputlisting[language=Python]{scripts/np_dtype_2.py}
+         %\pause
+         \item[] Other data types: 
+        \begin{itemize}
+            \item[] Complex 
+            \item[] Bool 
+            \item[] String
+        \end{itemize}
+         %\pause
+        \lstinputlisting[language=Python]{scripts/np_dtype_3.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - function for creating arrays}
+    \begin{itemize}
+        \item[] arange
+        \lstinputlisting[language=Python]{scripts/np_range.py}
+        %\pause
+        \item[] linspace
+        \lstinputlisting[language=Python]{scripts/np_linspace.py}
+        %\pause
+        \item[] random
+        \lstinputlisting[language=Python]{scripts/np_rand.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/np_randn.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - common arrays}
+    \begin{itemize}
+        \item[] zeros  
+        \lstinputlisting[language=Python]{scripts/np_zeros.py}
+        %\pause
+        \item[] ones 
+        \lstinputlisting[language=Python]{scripts/np_ones.py}
+        %\pause
+        \item[] diag  
+        \lstinputlisting[language=Python]{scripts/np_diag.py}
+        %\pause
+        \item[] eye   
+        \lstinputlisting[language=Python]{scripts/np_eye.py}
+        %\pause
+        \item[] More details: \url{http://wiki.scipy.org/Tentative_NumPy_Tutorial}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - indexing}
+    \begin{itemize}
+        \item[] Index elements in an array using the square bracket and indices. 
+        \lstinputlisting[language=Python]{scripts/np_idx_1.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/np_idx_2.py}
+        %\pause
+        \item[] If we omit an index of a multidimensional array it returns the whole row
+        \lstinputlisting[language=Python]{scripts/np_idx_3.py}
+        %\pause
+        \item[] Assigning new values to elements in an array using indexing
+        \lstinputlisting[language=Python]{scripts/np_idx_4.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{NumPy - slicing}
+    \begin{itemize}
+        \item[] Index slicing syntax \textbf{xm[lower:upper:step]} to extract part of an array. 
+        \lstinputlisting[language=Python]{scripts/np_sl_1.py}
+        %\pause
+        \item[] We can omit any of the three parameters in \textbf{xm[lower:upper:step]}
+        \lstinputlisting[language=Python]{scripts/np_sl_2.py}
+        %\pause 
+        \item[] Index slicing works exactly the same way for multidimensional arrays.
+        \lstinputlisting[language=Python]{scripts/np_sl_3.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{Matplotlib - basic visualization}
+    \begin{itemize}
+        \item[] \textit{Matplotlib} is a 2D plotting package.  
+        %\pause
+        \lstinputlisting[language=Python]{scripts/plt_1d.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/plt_2d.py}
+        %\pause
+        \item[] Reference: \url{http://matplotlib.org/}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{pip or easy\_install - managing local python packages}
+    \begin{itemize}
+        \item[] Machine learning toolbox in python
+        %\begin{itemize}
+         %   \item []SHOGUN \url{shogun-toolbox.org}
+         %   \item []scikit-learn \url{scikit-learn.org} 
+        %\end{itemize}
+        %\newline 
+ %       \pause
+        %\lstinputlisting[language=Bash]{scripts/pip_install.sh}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{}
+    \begin{itemize}
+        \item[] 
+    \end{itemize}
+\end{frame}
+% \item[] For further references url: \url{https://docs.python.org/2/library/re.html} 
+% \lstinputlisting[language=Python]{scripts/match_search.py}
+%
+\begin{frame}[plain]
+    \thankyou
+\end{frame}
+\end{document}
