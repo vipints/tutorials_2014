@@ -1,9 +1,9 @@
 # execute the following command in a unix console
 # creating a path for module installation 
-mkdir -p /Users/student/tmp/Python/2.7/site-packages/
+mkdir -p /Users/student/tmp/lib/python2.7/site-packages/
 
 # adding the above path to the pythonpath env variable 
-export PYTHONPATH=$PYTHONPATH:/Users/student/tmp/Python/2.7/site-packages/
+export PYTHONPATH=$PYTHONPATH:/Users/student/tmp/lib/python2.7/site-packages/
 
 # install the machine learning package
 pip install freeze scikit-learn  

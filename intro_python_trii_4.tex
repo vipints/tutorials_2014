@@ -243,14 +243,70 @@
 \end{frame}
 %
 \begin{frame}[plain]
-    \frametitle{}
+    \frametitle{BioPython - python modules for bioinformatics}
     \begin{itemize}
-        \item[] 
+        \item[] A set of free Python modules for working with sequence analysis.
+        \newline
+        %\pause 
+        \begin{itemize}
+            \item[] AlignIO 
+            \item[] SearchIO
+            \item[] BioSQL
+            \item[] Seq
+            \item[] SeqIO
+            \item[] SeqRecord
+            \newline
+            %\pause
+        \end{itemize}
+        \item[] Details: \url{http://biopython.org}
     \end{itemize}
 \end{frame}
 %
 \begin{frame}[plain]
-    \frametitle{pip or easy\_install - managing local python packages}
+    \frametitle{Seq - basic sequence tools}
+    \begin{itemize}
+        \item[]  BioPython represents sequences with the \textbf{Seq} object. 
+        \newline
+        %\pause
+        \lstinputlisting[language=Python]{scripts/seq.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{SeqIO - basic fileIO}
+    \begin{itemize}
+        \item[] \textbf{parse} function can handle GenBank, FastQ, Fasta formats.  
+        \newline
+        %\pause
+        \lstinputlisting[language=Python]{scripts/seqIO.py}
+        %\pause
+        \lstinputlisting[language=Python]{scripts/seqIOfq.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{SeqRecord - handling sequence records}
+    \begin{itemize}
+        \item[] Hold a sequence (as a Seq object) with identifiers (ID and name).
+        %\pause
+        \lstinputlisting[language=Python]{scripts/seqrecord.py}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{GFF Parsing - parsing genome annotation file}
+    \begin{itemize}
+        \item[] Not yet integrated into the core biopython  
+        \item[] \url{http://github.com/chapmanb/bcbb/tree/master/gff}  
+        \newline
+        %\pause
+        \item[] Collection of different annotation conveter programs 
+        \item[] \url{https://github.com/vipints/GFFtools-GX} 
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[plain]
+    \frametitle{\textbf{pip} or \textbf{easy\_install} - managing local python packages}
     \begin{itemize}
         \item[] Machine learning toolbox in python
         \begin{itemize}
@@ -275,19 +331,18 @@
 \end{frame}
 %
 \begin{frame}[plain]
-    \frametitle{Django - python web framework}
+    \frametitle{\textbf{Django} - python web framework}
     \begin{itemize}
         \item[] Creating a project: django-admin.py startproject mysite 
         \newline
-        \pause 
+        %\pause 
         \item[] Add names to \textit{mysite settings.py} \textit{mysite urls.py} 
-        %\newline
-        \pause 
+        %\pause 
         \item[] python manage.py startapp app\_name
-        \pause 
+        %\pause 
         \item[] Edit view.py 
         \lstinputlisting[language=Python]{scripts/views.py}
-        \pause 
+        %\pause 
         \item[] python manage.py runserver
         \item[] Details: \url{https://www.djangoproject.com/}
     \end{itemize}
