@@ -7,8 +7,8 @@ del xq[2:4]
 xq
 #[1, 6, 12]
 
-del xq[:]
+del xq[:] # deleting the contents 
 xq
 #[]
 
-del xq 
+del xq  # deleting the variable 
