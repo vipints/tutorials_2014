@@ -94,13 +94,13 @@
     \frametitle{List Comprehensions}
     \begin{itemize}
         \item[] List comprehensions provide a concise way to create lists. 
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/list_comprehension_1.py}
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/list_comprehension_2.py}
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/list_comprehension_3.py}
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/list_comprehension_4.py}
     \end{itemize}
 \end{frame}
@@ -110,7 +110,7 @@
     \begin{itemize}
         \item[] The \textbf{del} statement is to remove an item from a list given its index instead of its value.
         \newline
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/list_del.py}
     \end{itemize}
 \end{frame}
@@ -120,7 +120,7 @@
     \begin{itemize}
         \item[] Tuples are immutable, and usually contain an heterogeneous sequence of elements. 
         \newline
-        %\pause
+        \pause
         \lstinputlisting[language=Python]{scripts/tuple.py}
     \end{itemize}
 \end{frame}
@@ -129,29 +129,29 @@
     \frametitle{Defining Functions}
     \begin{itemize}
         \item[]Little self-contained programs that perform a specific task. 
-        %\pause
+        \newline
+        \pause
         \item[] Which you can incorporate into your own, larger programs.
         \newline
-        %\pause
+        \pause
         \item[] 'Calling' a function involves: \\ 
         giving a function input, and it will return a value as output.
         \newline
-        %\pause
+        \pause
         \item[] print 'Hello Python Class'
         \newline
-        %\pause
-        \item[] The keyword def introduces a function definition.
+        \pause
+        \item[] The keyword \textbf{def} introduces a function definition.
     \end{itemize}
 \end{frame}
 %% 
 \begin{frame}[plain]
     \frametitle{Defining Functions}
     \begin{itemize}
-        \item[] function definition 
+        \item[] function definition: 
         \lstinputlisting[language=Python]{scripts/factorial.py}
         \pause
-        %\newline 
-        \item[] function call  
+        \item[] function call:  
         \lstinputlisting[language=Python]{scripts/call_factorial.py}
     \end{itemize}
 \end{frame}
@@ -160,6 +160,7 @@
     \frametitle{Modules}
     \begin{itemize}
         \item[] A module is a file containing Python definitions and statements. 
+        \newline
         \pause
         \item[] factorial.py:
         \lstinputlisting[language=Python]{scripts/factorial.py}
@@ -187,10 +188,9 @@
 \begin{frame}[plain]
     \frametitle{Match Function}
     \begin{itemize}
-        \item[] Syntax pattern for match function:
+        \item[] Syntax pattern for \textbf{match} function:
         \newline
         \lstinputlisting[language=Python]{scripts/re_match_1.py} 
-        %\newline
         \pause
         \lstinputlisting[language=Python]{scripts/re_match_2.py}
     \end{itemize}
@@ -199,11 +199,11 @@
 \begin{frame}[plain]
     \frametitle{Matching vs Searching}
     \begin{itemize}
-        \item[] match checks for a match only at the beginning of the string
+        \item[] \textbf{match} checks for a match only at the beginning of the string
         \pause
-        \item[] search checks for a match anywhere in the string
-        \pause
+        \item[] \textbf{search} checks for a match anywhere in the string
         \newline
+        \pause
         \lstinputlisting[language=Python]{scripts/match_search.py}
     \end{itemize}
 \end{frame}
@@ -223,24 +223,23 @@
 \begin{frame}[plain]
     \frametitle{Errors and Exceptions}
     \begin{itemize}
-        \item[] Syntax errors.
+        \item[] \textbf{error} in syntax:
         \lstinputlisting[language=Python]{scripts/syn_error.py}
-        %\newline
         \pause
-        \item[] An exception is an event, which occurs during the execution of a program.
+        \item[] \textbf{Exception} event, occurs during the execution of a program.
         \lstinputlisting[language=Python]{scripts/excp_handle.py}
-        %\newline
         \pause
-        \item[] For further references url: \url{https://docs.python.org/2/tutorial/errors.html} 
+        \item[] For further references: \url{https://docs.python.org/2/tutorial/errors.html} 
     \end{itemize}
 \end{frame}
 %%
 \begin{frame}[plain]
-    \frametitle{The assert Statement}
+    \frametitle{The \textbf{assert} Statement}
     \begin{itemize}
         \item[] Python interpreter evaluates the expression,
-        \item[] If the expression is false, raises an AssertionError exception.
+        \item[] If the expression is false, raises an \textbf{AssertionError} exception.
         \newline
+        \pause
         \lstinputlisting[language=Python]{scripts/assert_1.py}
         \pause
         \item[] Test case to check for valid user input phone numbers: 
